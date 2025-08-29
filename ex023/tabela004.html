@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 13.em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome {
+            background-color: chartreuse;
+        }
+        col.cgrupo {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>André Souza</td>
+            <td>M</td>
+            <td>23</td>
+            <td>TI</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr class="destaque">
+            <td>Matias Rojas</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Veterinário</td>
+        </tr>
+        
+        <tr>
+            <td>Cláudia Souza</td>
+            <td>F</td>
+            <td>40</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Joel Melo</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Publicitário</td>
+        </tr>
+        <tr>
+            <td>Maria Fernandes</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Advogada</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
